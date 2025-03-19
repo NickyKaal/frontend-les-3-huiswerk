@@ -106,7 +106,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    flex-basis: 500px;
+    flex-basis: 300px;
+    flex-shrink:0;
 }
 
 /*////////////////////////
@@ -126,27 +127,38 @@ body{
     flex-direction: column;
     flex-basis:260px;
     justify-content: center;
-    align-items: center;
-
+    align-items: stretch;
+    row-gap:20px;
     flex-shrink: 0;
 }
 
-.article-part{
+.content-main article h2,
+.content-main article p{
     display:flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.article-price {
+.content-main article img{
+    display:flex;
+    max-width: 100%;/* TODO: geen max-width*/
+
+}
+
+.content-main article button{
+    display:flex;
+    justify-content: center;
+}
+
+.content-main article div{
+    display:flex;
     justify-content: space-between;
 }
 
-.article-price img{
+.content-main article div img{
     display:flex;
-    flex-basis: 24px;
+    flex-basis: 1em;
     flex-grow: 0;
+    max-width:1em;/* TODO: geen max-width*/
 }
-
 
 /*////////////////////////
     Footer

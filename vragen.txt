@@ -3,3 +3,8 @@
  v TODO: navragen hoe dit anders kan
  v Hoe krijg ik de menu items even breed met de hover
  v Hoe krijg ik het plaatje in de header correct ( hoogte)]
+
+
+ ---------
+  - TODO CSS (.article-price img), krijg het plaatje niet goed zonder max-width
+
