@@ -1,0 +1,160 @@
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    0. Imports
+    1. Global Styles
+    2. Typografie
+    3. Positioning
+        3.1 Nav
+        3.2 Content
+            3.2.1 Header
+            3.2.2 Main
+            3.2.3 Footer
+////////////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////
+    Global Styles
+////////////////////////*/
+
+body{
+    display: flex;
+    overflow:hidden;
+}
+
+.debug-box{
+    border: green solid 2px;
+}
+
+/*////////////////////////
+    Typografie
+////////////////////////*/
+
+.content-footer{
+    background-color: #383838;
+    color:white;
+}
+
+/*////////////////////////
+    Positioning
+////////////////////////*/
+
+/*////////////////////////
+    Nav
+////////////////////////*/
+
+.nav{
+    display: flex;
+    flex-basis: 250px;
+    height: 100vh;
+    flex-shrink: 0.1;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.nav-company-logo{
+    display:flex;
+    align-items: center;
+    column-gap:10px;
+}
+
+.nav-menu{
+    display:flex;
+    flex-direction: column;
+}
+
+.nav-menu li{
+    display:flex;
+    align-items: center;
+    flex-grow:1;
+}
+
+.nav-menu li a{
+    display:flex;
+    column-gap:10px;
+    flex-grow:1;
+}
+
+.nav-actions{
+    display:flex;
+    flex-direction: column;
+    flex-grow:1;
+    justify-content: flex-end;
+    row-gap:10px;
+}
+
+/*////////////////////////
+    Content
+////////////////////////*/
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-height: 100vh;
+    row-gap: 30px;
+}
+
+/*////////////////////////
+    Header
+////////////////////////*/
+
+.content-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/placeholder-image.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-basis: 500px;
+}
+
+/*////////////////////////
+    Main
+////////////////////////*/
+
+.content-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.content-main article{
+    display: flex;
+    flex-direction: column;
+    flex-basis:260px;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.article-part{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-price {
+    justify-content: space-between;
+}
+
+.article-price img{
+    display:flex;
+    flex-basis: 24px;
+    flex-grow: 0;
+}
+
+
+/*////////////////////////
+    Footer
+////////////////////////*/
+
+.content-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 3em;
+}

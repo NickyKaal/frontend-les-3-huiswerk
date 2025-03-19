@@ -1,0 +1,5 @@
+ v Wanneer padding en/of gap met een flexbox
+ v Hoe: Zorg ervoor dat de content in het rechter gedeelte niet uit de container valt, door de overflow property te gebruiken. Je kunt testen of het werkt door een stuk tekst van ongeveer 500 woorden toe te voegen en te kijken of er een scollbar ontstaat.
+ v TODO: navragen hoe dit anders kan
+ v Hoe krijg ik de menu items even breed met de hover
+ v Hoe krijg ik het plaatje in de header correct ( hoogte)]
