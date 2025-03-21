@@ -120,6 +120,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    overflow:auto;
 }
 
 .content-main article{
@@ -137,10 +138,16 @@ body{
     display:flex;
 }
 
-.content-main article img{
+.image-wrapper-article{
     display:flex;
-    max-width: 100%;/* TODO: geen max-width*/
+    flex-basis: 243px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
 
+.content-main article img{
+    /*display:flex;*/
+    max-width: 100%;/* TODO: Waarom werkt de fix niet voor dit element?!*/
 }
 
 .content-main article button{
@@ -151,14 +158,23 @@ body{
 .content-main article div{
     display:flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+
+.content-main article div .image-wrapper-icon {
+    display:flex;
+    flex-basis: 24px;
+    flex-grow: 0;
+    flex-shrink: 1;
 }
 
 .content-main article div img{
-    display:flex;
-    flex-basis: 1em;
-    flex-grow: 0;
-    max-width:1em;/* TODO: geen max-width*/
+    /*display:flex;*/
+    /*flex-basis: 1em;*/
+    /*flex-grow: 0;*/
 }
+
 
 /*////////////////////////
     Footer
@@ -170,3 +186,19 @@ body{
     align-items: center;
     flex-basis: 3em;
 }
+
+/*TODO: onderstaande fix voor de plaatjes toepassen*/
+/*
+<span class="image-wrapper">
+    <img src="assets/gele-bananen.jpg" alt="Gele bananen"/>
+</span>
+
+img {
+    width: 100%;
+}
+
+.image-wrapper {
+    flex-basis: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}*/
